@@ -1,2 +1,0 @@
-const e=document.querySelector(".feedback-form");e.querySelector("input"),e.querySelector("textarea"),e.querySelector("button");e.addEventListener("submit",(function(e){e.preventDefault();const{elements:{email:t,message:l}}=e.currentTarget;if(""===t.value||""===l.value)return alert("Please fill in all the fields!");const a={email:t.value,message:l.value};console.log(`E-mail: ${t.value}, Message: ${l.value}`),a.showThis(),e.currentTarget.reset()}));
-//# sourceMappingURL=03-feedback.cbc68c1b.js.map

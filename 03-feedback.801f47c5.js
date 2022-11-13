@@ -1,2 +1,0 @@
-!function(){var e=document.querySelector(".feedback-form");e.querySelector("input"),e.querySelector("textarea"),e.querySelector("button");e.addEventListener("submit",(function(e){e.preventDefault();var t=e.currentTarget.elements,a=t.email,r=t.message;if(""===a.value||""===r.value)return alert("Please fill in all the fields!");var l={email:a.value,message:r.value};console.log("E-mail: ".concat(a.value,", Message: ").concat(r.value)),l.showThis(),e.currentTarget.reset()}))}();
-//# sourceMappingURL=03-feedback.801f47c5.js.map
