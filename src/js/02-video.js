@@ -32,3 +32,9 @@ const restorePlayerToLastPlay = () => {
   player.setCurrentTime(lastPlayTime);
 };
 restorePlayerToLastPlay();
+const resetTime = ({ duration, percent, seconds }) => {
+  const lastPlayTime = getLocalLastPlayedTime();
+  if (lastPlayTime === duration) {
+    localStorage.removeItem('videoplayer-current-time');
+  }
+};

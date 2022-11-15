@@ -5,12 +5,13 @@ const message = document.querySelector('textarea');
 const btn = document.querySelector('button');
 
 form.addEventListener('input', throttle(savingData, 500));
+
 function savingData(event) {
   try {
     event.preventDefault();
     const {
       elements: { email, message },
-    } = event.currentTarget;
+    } = form;
     const user = {
       email: email.value,
       message: message.value,
@@ -43,6 +44,9 @@ function handleSubmit(event) {
   const {
     elements: { email, message },
   } = event.currentTarget;
+  if (email.value === '' || message.value === '') {
+    return alert('Please fill in all the fields!');
+  }
   const user = {
     email: email.value,
     message: message.value,
