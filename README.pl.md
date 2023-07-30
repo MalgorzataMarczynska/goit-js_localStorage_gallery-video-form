@@ -1,3 +1,11 @@
+# GoIt homework with Parcel bundler and npm packages:
+
+# Task 1. Image gallery using SimpleLightbox library.
+
+# Task 2. Video player using Vimeo platform. A script that will save the current video playback time in local storage and when reloading the page, continue playing the video from that moment.
+
+# Task 3. Form that will save field values to local storage when the user types something into them.
+
 # Parcel template
 
 Ten projekt został stworzony przy pomocy Parcel. W celu zapoznania się i

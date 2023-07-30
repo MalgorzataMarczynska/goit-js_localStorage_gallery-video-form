@@ -1,5 +1,5 @@
 import Player from '@vimeo/player';
-const throttle = require('lodash.throttle');
+import throttle from 'lodash.throttle';
 
 const player = new Player('vimeo-player');
 
@@ -33,15 +33,7 @@ const restorePlayerToLastPlay = () => {
 };
 restorePlayerToLastPlay();
 
-// const resetTime = ({ duration, percent, seconds }) => {
-//   const lastPlayTime = getLocalLastPlayedTime();
-//   if (lastPlayTime === duration - 1) {
-//     localStorage.removeItem('videoplayer-current-time');
-//   }
-// };
-
 const resetTime = () => {
-  const lastPlayTime = getLocalLastPlayedTime();
   const localLastPlayTime = localStorage.getItem('videoplayer-current-time');
   const basedTime = 0;
   if (localLastPlayTime > 570) {

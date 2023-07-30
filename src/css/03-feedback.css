@@ -3,7 +3,7 @@
   flex-direction: column;
   max-width: 480px;
   padding: 12px;
-  background-color: #fff;
+  background-color: bisque;
   border: 1px solid rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
@@ -17,6 +17,9 @@
 .feedback-form button {
   padding: 8px 12px;
   font: inherit;
+  background-color: blanchedalmond;
+  border-color: rgb(248, 194, 114);
+  box-shadow: 0em 0em 0.6em 0.3em rgba(248, 194, 114, 0.5);
   cursor: pointer;
 }
 
@@ -24,6 +27,7 @@ input,
 textarea {
   padding: 8px;
   font: inherit;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 textarea {

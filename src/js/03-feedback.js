@@ -1,8 +1,7 @@
-const throttle = require('lodash.throttle');
+import throttle from 'lodash.throttle';
 const form = document.querySelector('.feedback-form');
 const input = document.querySelector('input');
 const message = document.querySelector('textarea');
-const btn = document.querySelector('button');
 
 form.addEventListener('input', throttle(savingData, 500));
 
@@ -38,6 +37,7 @@ function loadingData() {
 }
 
 loadingData();
+
 form.addEventListener('submit', handleSubmit);
 function handleSubmit(event) {
   event.preventDefault();
